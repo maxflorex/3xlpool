@@ -10,20 +10,24 @@ const router = Router()
  * components:
  *  schemas:
  *      Questions:
- *          Type: object
+ *          type: object
+ *          required:
+ *              - title
+ *              - reaction
  *          properties:
- *          id:
- *              type: string
- *              description: the auto-generated id of question
- *          title:
- *              type: string
- *              description: the question title
- *          reaction:
- *              type: enum
- *              description: vote pool
- * tags:
- *  name: Questions
- *  description: questions endpoint
+ *              id: 
+ *                  type: string
+ *                  description: The auto-generated id of the question
+ *              title:
+ *                  type: string
+ *                  description: The question description
+ *              reaction:
+ *                  type: string
+ *                  description: The reaction to the question
+ *          example:
+ *              id: d568c_678
+ *              title: What is this?
+ *              reaction: Nelson
  */
 
 

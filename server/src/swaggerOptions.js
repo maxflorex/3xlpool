@@ -1,8 +1,15 @@
 export const options = {
     definition: {
         info: {
-            title: "Questions api"
-        }
+            title: "Pool API",
+            version: "1.0.0",
+            description: "A Simple Express Library API"
+        },
+        servers: [
+            {
+                url: "http://localhost:3000"
+            }
+        ],
     },
-    apis: ["./routes/*.js"]
+    apis: ["/server/src/routes/*.js"]
 }
