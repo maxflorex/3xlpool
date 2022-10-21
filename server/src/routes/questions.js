@@ -67,7 +67,7 @@ router.get('/questions/:id', getQ)
  *   summary: save a new question
  *   tags: [Questions]
  */
-router.post('/questions/:id', saveQ)
+router.post('/questions', saveQ)
 
 
 // ? DELETE QUESTION

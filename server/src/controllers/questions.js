@@ -17,7 +17,7 @@ export const getQ = async (req, res) => {
 //  ADD NEW QUESTION
 export const saveQ = async (req, res) => {
     const connection = await connect()
-    const [results] = await connection.query("INSERT INTO question(title, reaction) VALUES(?,?)", [
+    const [results] = await connection.query("INSERT INTO questions(title, reaction) VALUES(?,?)", [
         req.body.title,
         req.body.reaction
     ])
